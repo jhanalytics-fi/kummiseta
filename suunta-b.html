@@ -1,0 +1,287 @@
+<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Kummisetä – tyylisuunta B · Kyltti</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,600;62..125,800&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 var(--f-body)}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+svg{width:1.25em;height:1.25em;flex:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--f-head);font-weight:var(--head-weight);text-transform:var(--head-case);letter-spacing:var(--head-track);font-stretch:var(--head-stretch);line-height:1.08;margin:0}
+.demo-bar{background:#1d1d1f;color:#ddd;font:13px/1.4 system-ui,sans-serif;padding:8px 0}
+.demo-bar .wrap{display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap}
+.demo-bar a{color:#fff;text-decoration:underline}
+.utility{font-size:14px;padding:7px 0}
+.utility .wrap{display:flex;gap:28px;justify-content:center;flex-wrap:wrap}
+.utility span{display:flex;gap:6px;align-items:center}
+header.site{background:var(--surface);border-bottom:1px solid var(--line)}
+.hbar{display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center;padding-top:16px;padding-bottom:16px}
+.logo{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.logo .hat{width:58px;height:36px;color:var(--brand)}
+.logo .word{font-family:var(--f-word);font-size:30px;line-height:1;font-weight:400;letter-spacing:-.01em}
+.logo .word-sub{display:block;font-family:var(--f-body);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.search{display:flex;border:1.5px solid var(--ink);border-radius:var(--radius-btn);overflow:hidden;background:#fff;max-width:620px;width:100%;justify-self:center}
+.search input{flex:1;border:0;padding:11px 18px;font:inherit;font-size:16px;background:transparent;min-width:0}
+.search input:focus{outline:none}
+.search button{border:0;background:var(--brand);color:var(--brand-ink);padding:0 18px;display:flex;align-items:center;cursor:pointer}
+.hicons{display:flex;gap:18px;align-items:center;font-size:14px}
+.hicons a{display:flex;flex-direction:column;align-items:center;gap:2px;position:relative}
+.hicons svg{width:24px;height:24px}
+.badge-n{position:absolute;top:-6px;right:-8px;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:700;border-radius:99px;min-width:18px;height:18px;display:grid;place-items:center;padding:0 4px}
+.hicons .menu-btn{display:none}
+.nav{background:var(--surface);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav a{padding:13px 14px;font-weight:600;font-size:16px;white-space:nowrap;border-radius:2px}
+.nav .more{margin-left:auto;color:var(--muted);font-weight:400}
+.hero{padding:56px 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:end}
+.hero h1{font-size:clamp(40px,5.4vw,72px);margin-bottom:18px}
+.hero .lead{font-size:19px;max-width:30em;color:var(--muted);margin:0 0 26px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:56px}
+.shelf{display:flex;align-items:flex-end;justify-content:center;gap:14px;height:100%;min-height:300px}
+.shelf img{width:118px;aspect-ratio:2/3;object-fit:cover;border-radius:2px;box-shadow:0 10px 24px rgba(0,0,0,.18),0 1px 0 rgba(0,0,0,.2);background:#ddd}
+.shelf img:nth-child(1){transform:rotate(-4deg) translateY(-6px)}
+.shelf img:nth-child(2){width:140px;transform:translateY(-22px)}
+.shelf img:nth-child(3){transform:rotate(3deg)}
+.shelf img:nth-child(4){width:128px;transform:rotate(-2deg) translateY(-12px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px/1 var(--f-body);padding:14px 24px;border-radius:var(--radius-btn);border:1.5px solid transparent;cursor:pointer;transition:.15s}
+.btn.primary{background:var(--brand);color:var(--brand-ink)}
+.btn.primary:hover{background:var(--brand-dark)}
+.btn.ghost{border-color:currentColor;background:transparent}
+.btn.accent{background:var(--accent);color:var(--accent-ink)}
+.btn.sm{padding:10px 14px;font-size:14px}
+section.block{padding:56px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:24px}
+.sec-head h2{font-size:clamp(26px,3vw,36px)}
+.sec-head a{font-weight:600;border-bottom:1.5px solid currentColor;white-space:nowrap;font-size:15px}
+.cats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.cat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px 18px;display:flex;flex-direction:column;gap:6px;transition:.15s}
+.cat:hover{border-color:var(--ink)}
+.cat{min-width:0}.cat h3{font-size:21px;hyphens:auto;overflow-wrap:break-word}
+.cat small{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:24px 18px}
+.card{display:flex;flex-direction:column;gap:6px}
+.card .cover{background:var(--tint);border-radius:var(--radius);aspect-ratio:3/4;display:grid;place-items:center;padding:14px;margin-bottom:6px}
+.card .cover img{max-height:100%;width:auto;object-fit:contain;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.card .author{font-size:13.5px;color:var(--muted)}
+.card .title{font-size:17px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card .meta{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted);flex-wrap:wrap}
+.card .buy{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:6px}
+.price{font-weight:700;font-size:18px;color:var(--price)}
+.icon-btn{width:38px;height:38px;border-radius:var(--radius-btn);display:grid;place-items:center;background:var(--brand);color:var(--brand-ink);border:0;cursor:pointer}
+.cond{font-size:12px;font-weight:700;letter-spacing:.03em;padding:2px 7px;border-radius:3px;white-space:nowrap}
+.sell{border-radius:var(--radius);padding:36px 40px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.sell h2{font-size:30px;margin-bottom:6px}.sell p{margin:0;opacity:.9}
+.divider{display:flex;align-items:center;gap:14px;font:600 12px/1 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#888;padding:28px 0 0}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:#ccc}
+.crumbs{font-size:14px;color:var(--muted);padding:22px 0}
+.crumbs a{text-decoration:underline}
+.pp{display:grid;grid-template-columns:minmax(260px,380px) 1fr;gap:48px;padding-bottom:40px}
+.pp-img{background:var(--tint);border-radius:var(--radius);padding:28px;display:grid;place-items:center;align-self:start}
+.pp-img img{box-shadow:0 10px 28px rgba(0,0,0,.2)}
+.pp-thumbs{display:flex;gap:8px;margin-top:10px}
+.pp-thumbs span{width:56px;height:72px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+.pp-thumbs span.on{border:2px solid var(--ink)}
+.pp-author{font-size:17px;color:var(--muted)}
+.pp-author a{text-decoration:underline}
+.pp-title{font-size:clamp(32px,3.6vw,46px);margin:4px 0 10px}
+.pp-sub{color:var(--muted);margin:0 0 20px}
+.ticket{border-radius:var(--radius);padding:20px 22px;display:grid;gap:14px;max-width:560px}
+.ticket .row1{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.ticket .price{font-size:32px}
+.ticket .only{font-size:14px;color:var(--muted)}
+.ticket .row2{display:flex;gap:10px;flex-wrap:wrap}
+.ticket .row2 .btn.primary{flex:1;min-width:200px}
+.ticket ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:15px}
+.ticket li{display:flex;gap:8px;align-items:center}
+.condline{display:flex;gap:10px;align-items:center;font-size:15px}
+.spec{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin:28px 0 0;max-width:720px;font-size:15.5px}
+.spec div{display:flex;align-items:baseline;padding:5px 0}
+.spec dt{display:flex;flex:1;color:var(--muted)}
+.spec dd{margin:0;font-weight:600;text-align:right}
+.desc{max-width:62ch;margin-top:26px}
+.desc h3{font-size:20px;margin-bottom:8px}
+.desc p{margin:0 0 10px}
+.tile{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.panel h3{font-size:14px;font-family:var(--f-body);text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:700;margin-bottom:16px;font-stretch:normal}
+.sw{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.sw div{border-radius:var(--radius);height:84px;padding:8px;font:12px/1.3 ui-monospace,Menlo,monospace;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid rgba(0,0,0,.08)}
+.typo p{margin:0 0 12px}
+.row-btns{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+footer.site{background:var(--brand-dark);color:#e9e2dc;margin-top:56px;padding:48px 0 28px;font-size:15px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+footer h4{font:700 13px/1 var(--f-body);text-transform:uppercase;letter-spacing:.12em;margin:0 0 14px;color:#fff}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:7px}
+footer .logo{color:#fff}footer .logo .hat{color:var(--accent)}footer .logo .word-sub{color:#cfc4bb}
+footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:36px;padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;opacity:.75}
+@media (max-width:1100px){.grid{grid-template-columns:repeat(4,1fr)}.cats{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:760px){
+ body{font-size:16px}
+ .utility .wrap{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto}
+ .utility span:nth-child(n+2){display:none}
+ .hbar{grid-template-columns:auto 1fr auto;gap:12px;padding-top:10px;padding-bottom:12px}
+ .hicons .menu-btn{display:flex}
+ .logo .hat{width:40px;height:26px}.logo .word{font-size:23px}.logo .word-sub{font-size:9.5px}
+ .search{grid-column:1/-1;grid-row:2}
+ .hicons{gap:14px;justify-self:end}.hicons small{display:none}
+ .nav .more{display:none}
+ .hero{padding-top:32px}.hero .wrap{grid-template-columns:1fr}
+ .shelf{min-height:0;order:-1;gap:8px}.shelf img{width:74px}.shelf img:nth-child(2){width:88px}.shelf img:nth-child(4){width:80px}
+ .hero .ctas{padding-bottom:36px}
+ section.block{padding:36px 0}
+ .cats{display:flex;overflow-x:auto;scrollbar-width:none;margin:0 -20px;padding:0 20px}.cat{flex:0 0 170px}.cat h3{font-size:18px;hyphens:none}
+ .grid{grid-template-columns:repeat(2,1fr);gap:22px 14px}
+ .pp{grid-template-columns:1fr;gap:20px}
+ .pp-img{padding:20px}.pp-img img{max-height:340px}
+ .spec{grid-template-columns:1fr}
+ .tile{grid-template-columns:1fr}
+ .sw{grid-template-columns:repeat(2,1fr)}
+ .sell{padding:26px 22px}
+ footer .cols{grid-template-columns:1fr 1fr}
+}
+
+:root{--paper:#fff;--surface:#fff;--ink:#151515;--muted:#5d5d5d;--brand:#151515;--brand-ink:#fff;--brand-dark:#000;
+--accent:#f5d22e;--accent-ink:#151515;--line:#e4e2dc;--tint:#fbf5d6;--price:#151515;
+--f-head:'Archivo',system-ui,sans-serif;--f-body:'Archivo',system-ui,sans-serif;--f-word:'Libre Caslon Text',Georgia,serif;
+--radius:3px;--radius-btn:3px;--head-weight:800;--head-case:uppercase;--head-track:.005em;--head-stretch:72%}
+.hero{background:var(--accent)}
+.hero h1 em{font-style:normal;background:var(--ink);color:var(--accent);padding:0 .15em}
+.hero .lead{color:#2b2b2b}
+.hero .btn.ghost{border-color:var(--ink)}
+.cond{background:var(--ink);color:var(--accent);border:1px solid var(--ink)}
+.card .title{font-family:var(--f-word);font-weight:400}
+.pp-title{font-family:var(--f-word)!important;text-transform:none!important;font-weight:400!important;font-stretch:normal!important}
+.price-tag{background:var(--accent);padding:.05em .3em;border-radius:2px}
+.spec dt::after{content:"";flex:1;border-bottom:1px solid var(--line);margin:0 .5rem .3rem}
+.utility{background:var(--ink);color:#eee}
+.utility b{color:var(--accent)}
+.nav{border-top:3px solid var(--ink)}
+.nav a{font-family:var(--f-head);text-transform:uppercase;font-stretch:80%;font-weight:700;letter-spacing:.02em}
+.nav a:hover,.nav a.on{background:var(--accent);color:var(--ink)}
+.btn.primary:hover{background:var(--accent);color:var(--ink)}
+.sell{background:var(--accent);color:var(--ink)}
+.sell .btn{background:var(--ink);color:#fff}
+.ticket{background:var(--tint);border:2px solid var(--ink)}
+.cat h3{font-size:19px}
+.logo .word-sub{font-family:var(--f-head);font-stretch:75%;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+</style></head><body>
+<div class="demo-bar"><div class="wrap"><span><b>Luonnos</b> · Tyylisuunta B · Kyltti · JH Analytics</span><span><a href="index.html">Kaikki suunnat</a> · <a href="suunta-a.html">Vertaa: A · Kirjastokortti -&gt;</a></span></div></div>
+
+<div class="utility"><div class="wrap"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h11v10H2zM13 10h4l3 3v3h-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="6" cy="17.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="17.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> <b>Ilmainen toimitus</b>&nbsp;yli 75 € tilauksiin</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v10h16V10M3 5h18l-1 5H4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 20v-5h4v5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Nouto liikkeestä, Uudenmaankatu 26</span><span>★ 4,8/5 · 293 asiakaspalautetta</span></div></div>
+<header class="site"><div class="wrap hbar">
+ <a href="#" class="logo"><svg class="hat" viewBox="0 0 64 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 29C11 35.5 52 35.5 61 26.5"/><path d="M15 28.5C13.5 17 16.5 6.5 25 5.5c4-.4 5.5 3.3 7 3.3s3-3.7 7-3.3c8.5 1 11.5 11.5 10 23"/><path d="M14.3 23.2c11 3.4 24.4 3.4 35.4 0"/><path d="M32 9v6"/></g></svg><span><span class="word">Kummisetä</span><span class="word-sub">Divari &amp; Antikvariaatti</span></span></a>
+ <form class="search" role="search" onsubmit="return false"><input placeholder="Hae kirjailijaa, teosta tai ISBN:ää" aria-label="Haku"><button aria-label="Hae"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></form>
+ <div class="hicons"><a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-8.6-9C2.3 7.6 4.6 5 7.5 5c1.9 0 3.4 1 4.5 2.6C13.1 6 14.6 5 16.5 5c2.9 0 5.2 2.6 4.1 6-1.6 4.6-8.6 9-8.6 9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><small>Suosikit</small></a><a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><small>Tili</small></a><a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg><small>Kori</small><span class="badge-n">2</span></a><a href="#" class="menu-btn" aria-label="Valikko"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a></div>
+</div></header>
+<nav class="nav"><div class="wrap"><a href="#" class=on>Kaunokirjallisuus</a><a href="#">Scifi &amp; fantasia</a><a href="#">Historia</a><a href="#">Filosofia</a><a href="#">Psykologia</a><a href="#" class="more">Kaikki kategoriat</a></div></nav>
+
+<main>
+<section class="hero"><div class="wrap">
+ <div><h1>Hyviä kirjoja, <em>toiseen kertaan.</em></h1>
+ <p class="lead">Yli 3 500 käytettyä ja harvinaista kirjaa Uudenmaankadun antikvariaatista. Jokainen kirja on tarkistettu ja kuntoluokiteltu.</p>
+ <div class="ctas"><a href="#uusimmat" class="btn primary">Uusimmat hyllyssä</a><a href="#" class="btn ghost">Myy meille kirjasi</a></div></div>
+ <div class="shelf"><img src="https://storage.googleapis.com/antikvaari_kuvat/imagesproduct/1092/md_00188ab9df7e793858d2de89.jpg" alt="" referrerpolicy="no-referrer"><img src="https://storage.googleapis.com/antikvaari_kuvat/imagesproduct/1092/md_002aeaa6df7e793858e52018.jpg" alt="" referrerpolicy="no-referrer"><img src="https://storage.googleapis.com/antikvaari_kuvat/00000444f9500e345089353c/69258499cafa264d5629a2a5/692584a3cafa264d5629a560_lokki-vanja-eno-kolme-sisarta-kirsikkatarha.jpg" alt="" referrerpolicy="no-referrer"><img src="https://storage.googleapis.com/antikvaari_kuvat/imagesproduct/1092/md_001d36a4df7e793858d77e3f.jpg" alt="" referrerpolicy="no-referrer"></div>
+</div></section>
+
+<section class="block"><div class="wrap">
+ <div class="sec-head"><h2>Tärkeimmät hyllyt</h2><a href="#">Kaikki kategoriat</a></div>
+ <div class="cats"><a class="cat" href="#"><h3>Kaunokirjallisuus</h3><small>Romaanit, novellit, draama</small></a><a class="cat" href="#"><h3>Scifi &amp; fantasia</h3><small>Tieteis- ja fantasiakirjallisuus</small></a><a class="cat" href="#"><h3>Historia</h3><small>Suomi, maailma, sotahistoria</small></a><a class="cat" href="#"><h3>Filosofia</h3><small>Klassikot ja nykyajattelu</small></a><a class="cat" href="#"><h3>Psykologia</h3><small>Psykologia ja elämäntaito</small></a></div>
+</div></section>
+
+<section class="block" id="uusimmat" style="padding-top:0"><div class="wrap">
+ <div class="sec-head"><h2>Uusimmat hyllyssä</h2><a href="#">Näytä kaikki</a></div>
+ <div class="grid"><article class="card"><a href="#tuotesivu" class="cover"><img src="https://storage.googleapis.com/antikvaari_kuvat/imagesproduct/1092/md_00188ab9df7e793858d2de89.jpg" alt="Mrs. Dalloway" loading="lazy" referrerpolicy="no-referrer"></a>
+<span class="author">Woolf, Virginia</span><a href="#tuotesivu" class="title">Mrs. Dalloway</a>
+<span class="meta">Pokkari <span class="cond" title="Erinomainen">K4</span></span>
+<div class="buy"><span class="price"><span class="price-tag">15,00 €</span></span><button class="icon-btn" aria-label="Lisää ostoskoriin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg></button></div></article><article class="card"><a href="#tuotesivu" class="cover"><img src="https://storage.googleapis.com/antikvaari_kuvat/imagesproduct/1092/md_0029b3aadf7e793858e3ed0b.jpg" alt="Ihmisyys – 1900-luvun moraalihistoria" loading="lazy" referrerpolicy="no-referrer"></a>
+<span class="author">Glover, Jonathan</span><a href="#tuotesivu" class="title">Ihmisyys – 1900-luvun moraalihistoria</a>
+<span class="meta">Pokkari <span class="cond" title="Erinomainen">K4</span></span>
+<div class="buy"><span class="price"><span class="price-tag">10,00 €</span></span><button class="icon-btn" aria-label="Lisää ostoskoriin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg></button></div></article><article class="card"><a href="#tuotesivu" class="cover"><img src="https://storage.googleapis.com/antikvaari_kuvat/00000444f9500e345089353c/69258499cafa264d5629a2a5/692584a3cafa264d5629a560_lokki-vanja-eno-kolme-sisarta-kirsikkatarha.jpg" alt="Lokki ; Vanja-eno ; Kolme sisarta ; Kirsikkatarha" loading="lazy" referrerpolicy="no-referrer"></a>
+<span class="author">Tšehov, Anton</span><a href="#tuotesivu" class="title">Lokki ; Vanja-eno ; Kolme sisarta ; Kirsikkatarha</a>
+<span class="meta">Pokkari <span class="cond" title="Erinomainen">K4</span></span>
+<div class="buy"><span class="price"><span class="price-tag">10,00 €</span></span><button class="icon-btn" aria-label="Lisää ostoskoriin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg></button></div></article><article class="card"><a href="#tuotesivu" class="cover"><img src="https://storage.googleapis.com/antikvaari_kuvat/imagesproduct/1092/md_001df705df7e793858d83a4e.jpg" alt="Kognitiivinen psykoterapia" loading="lazy" referrerpolicy="no-referrer"></a>
+<span class="author">Kähkönen, Karila, Holmberg</span><a href="#tuotesivu" class="title">Kognitiivinen psykoterapia</a>
+<span class="meta">Sidottu <span class="cond" title="Erinomainen">K4</span></span>
+<div class="buy"><span class="price"><span class="price-tag">35,00 €</span></span><button class="icon-btn" aria-label="Lisää ostoskoriin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg></button></div></article><article class="card"><a href="#tuotesivu" class="cover"><img src="https://storage.googleapis.com/antikvaari_kuvat/imagesproduct/1092/md_002aeaa6df7e793858e52018.jpg" alt="Kuin surmaisi satakielen" loading="lazy" referrerpolicy="no-referrer"></a>
+<span class="author">Lee, Harper</span><a href="#tuotesivu" class="title">Kuin surmaisi satakielen</a>
+<span class="meta">Pokkari <span class="cond" title="Hyvä">K3</span></span>
+<div class="buy"><span class="price"><span class="price-tag">8,00 €</span></span><button class="icon-btn" aria-label="Lisää ostoskoriin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg></button></div></article><article class="card"><a href="#tuotesivu" class="cover"><img src="https://storage.googleapis.com/antikvaari_kuvat/imagesproduct/1092/md_001d36a4df7e793858d77e3f.jpg" alt="Tunteiden lukukausi" loading="lazy" referrerpolicy="no-referrer"></a>
+<span class="author">Mustonen, Enni</span><a href="#tuotesivu" class="title">Tunteiden lukukausi</a>
+<span class="meta">Sidottu <span class="cond" title="Erinomainen">K4</span></span>
+<div class="buy"><span class="price"><span class="price-tag">20,00 €</span></span><button class="icon-btn" aria-label="Lisää ostoskoriin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg></button></div></article><article class="card"><a href="#tuotesivu" class="cover"><img src="https://storage.googleapis.com/antikvaari_kuvat/00000444f9500e345089353c/69f99f31474974b13826f576/69f99f39474974b13826f877_hildur.jpg" alt="Hildur" loading="lazy" referrerpolicy="no-referrer"></a>
+<span class="author">Rämö, Satu</span><a href="#tuotesivu" class="title">Hildur</a>
+<span class="meta">Nidottu <span class="cond" title="Erinomainen">K4</span></span>
+<div class="buy"><span class="price"><span class="price-tag">7,00 €</span></span><button class="icon-btn" aria-label="Lisää ostoskoriin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg></button></div></article><article class="card"><a href="#tuotesivu" class="cover"><img src="https://storage.googleapis.com/antikvaari_kuvat/imagesproduct/1092/md_0032e8abdf7e793858ed0a2a.jpg" alt="Varianssi – Lataa itsesi täyteen energiaa" loading="lazy" referrerpolicy="no-referrer"></a>
+<span class="author">Kilpinen, Hagqvist</span><a href="#tuotesivu" class="title">Varianssi – Lataa itsesi täyteen energiaa</a>
+<span class="meta">Sidottu <span class="cond" title="Erinomainen">K4</span></span>
+<div class="buy"><span class="price"><span class="price-tag">12,00 €</span></span><button class="icon-btn" aria-label="Lisää ostoskoriin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg></button></div></article><article class="card"><a href="#tuotesivu" class="cover"><img src="https://storage.googleapis.com/antikvaari_kuvat/00000444f9500e345089353c/6abe27a89da0c38a96ad5da8/6abe27dc9da0c38a96ad75d0_rosa-ja-bjork.jpg" alt="Rosa ja Björk" loading="lazy" referrerpolicy="no-referrer"></a>
+<span class="author">Rämö, Satu</span><a href="#tuotesivu" class="title">Rosa ja Björk</a>
+<span class="meta">Nidottu <span class="cond" title="Erinomainen">K4</span></span>
+<div class="buy"><span class="price"><span class="price-tag">6,00 €</span></span><button class="icon-btn" aria-label="Lisää ostoskoriin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg></button></div></article><article class="card"><a href="#tuotesivu" class="cover"><img src="https://storage.googleapis.com/antikvaari_kuvat/00000444f9500e345089353c/6ace34f53e016925a5f9e5ad/6ace35273e016925a5f9e5ef_toimenpidepaivat.jpg" alt="Toimenpidepäivät" loading="lazy" referrerpolicy="no-referrer"></a>
+<span class="author">Saari, Miia</span><a href="#tuotesivu" class="title">Toimenpidepäivät</a>
+<span class="meta">Sidottu <span class="cond" title="Uudenveroinen">K5-</span></span>
+<div class="buy"><span class="price"><span class="price-tag">30,00 €</span></span><button class="icon-btn" aria-label="Lisää ostoskoriin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg></button></div></article><article class="card"><a href="#tuotesivu" class="cover"><img src="https://storage.googleapis.com/antikvaari_kuvat/00000444f9500e345089353c/6a5b401c0d8cd86636a6dd79/6a5b403c0d8cd86636a6e44d_jakob.jpg" alt="Jakob" loading="lazy" referrerpolicy="no-referrer"></a>
+<span class="author">Rämö, Satu</span><a href="#tuotesivu" class="title">Jakob</a>
+<span class="meta">Pokkari <span class="cond" title="Erinomainen">K4</span></span>
+<div class="buy"><span class="price"><span class="price-tag">7,00 €</span></span><button class="icon-btn" aria-label="Lisää ostoskoriin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg></button></div></article><article class="card"><a href="#tuotesivu" class="cover"><img src="https://storage.googleapis.com/antikvaari_kuvat/00000444f9500e345089353c/6931688c9321e054dec9ccb2/693168af9321e054dec9e74e_elamanmenoa-lukemista-aikuisille-maahanmuuttajille.jpg" alt="Elämänmenoa" loading="lazy" referrerpolicy="no-referrer"></a>
+<span class="author">Saunela, Marja-Liisa</span><a href="#tuotesivu" class="title">Elämänmenoa</a>
+<span class="meta">Nidottu <span class="cond" title="Uusi">Uusi</span></span>
+<div class="buy"><span class="price"><span class="price-tag">29,00 €</span></span><button class="icon-btn" aria-label="Lisää ostoskoriin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg></button></div></article></div>
+</div></section>
+
+<section class="block" style="padding-top:0"><div class="wrap"><div class="sell">
+ <div><h2>Ostamme kirjoja ja elokuvia</h2><p>Kerro mitä sinulla on, niin teemme tarjouksen.</p></div>
+ <a href="#" class="btn">Kysy tarjous</a></div></div></section>
+
+<div class="wrap"><div class="divider" id="tuotesivu">Tuotesivu</div></div>
+<section><div class="wrap">
+ <div class="crumbs"><a href="#">Etusivu</a> / <a href="#">Kaunokirjallisuus</a> / <a href="#">Käännöskirjallisuus</a> / Mrs. Dalloway</div>
+ <div class="pp">
+  <div><div class="pp-img"><img src="https://storage.googleapis.com/antikvaari_kuvat/imagesproduct/1092/md_00188ab9df7e793858d2de89.jpg" alt="Mrs. Dalloway" referrerpolicy="no-referrer"></div>
+  <div class="pp-thumbs"><span class="on"></span><span></span><span></span></div></div>
+  <div>
+   <div class="pp-author"><a href="#">Virginia Woolf</a> · suom. Kyllikki Hämäläinen</div>
+   <h1 class="pp-title">Mrs. Dalloway</h1>
+   <p class="pp-sub">Pokkari · Otava, Seven-sarja · 2003</p>
+   <div class="ticket">
+    <div class="row1"><span class="price"><span class="price-tag">15,00 €</span></span><span class="condline"><span class="cond">K4</span> Erinomainen kunto</span><span class="only">Ainoa kappale</span></div>
+    <div class="row2"><button class="btn primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg> Lisää ostoskoriin</button><button class="btn ghost" aria-label="Lisää suosikiksi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-8.6-9C2.3 7.6 4.6 5 7.5 5c1.9 0 3.4 1 4.5 2.6C13.1 6 14.6 5 16.5 5c2.9 0 5.2 2.6 4.1 6-1.6 4.6-8.6 9-8.6 9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button></div>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h11v10H2zM13 10h4l3 3v3h-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="6" cy="17.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="17.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Toimitus 6,90 € · ilmainen yli 75 € tilauksiin</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v10h16V10M3 5h18l-1 5H4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 20v-5h4v5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Nouto Uudenmaankatu 26:sta, varmista saatavuus</li></ul>
+   </div>
+   <dl class="spec">
+    <div><dt>Sidosasu</dt><dd>Pokkari</dd></div><div><dt>Kunto</dt><dd>K4 – erinomainen</dd></div>
+    <div><dt>Kustantaja</dt><dd>Otava</dd></div><div><dt>Painovuosi</dt><dd>2003</dd></div>
+    <div><dt>Painos</dt><dd>2.–3.</dd></div><div><dt>Sivuja</dt><dd>293</dd></div>
+    <div><dt>Kieli</dt><dd>suomi</dd></div><div><dt>ISBN</dt><dd>978-951-1-19042-4</dd></div>
+   </dl>
+   <div class="desc"><h3>Kuvaus</h3><p>Modernismin klassikko yhdestä lontoolaisesta kesäpäivästä. Clarissa Dalloway valmistautuu illan kutsuihin, ja Woolfin tajunnanvirta kuljettaa lukijaa muistojen ja nykyhetken välillä.</p></div>
+  </div>
+ </div>
+</div></section>
+
+<div class="wrap"><div class="divider">Tyylin perusosat</div></div>
+<section class="block"><div class="wrap tile">
+ <div class="panel"><h3>Värit</h3><div class="sw"><div style="background:var(--brand);color:#fff"><b>Pääväri</b>--brand</div><div style="background:var(--brand-dark);color:#fff"><b>Tumma</b>--brand-dark</div><div style="background:var(--accent);color:#222"><b>Korostus</b>--accent</div><div style="background:var(--ink);color:#fff"><b>Teksti</b>--ink</div><div style="background:var(--muted);color:#fff"><b>Toissijainen</b>--muted</div><div style="background:var(--line);color:#222"><b>Viiva</b>--line</div><div style="background:var(--tint);color:#222"><b>Sävypinta</b>--tint</div><div style="background:var(--paper);color:#222"><b>Tausta</b>--paper</div></div></div>
+ <div class="panel typo"><h3>Typografia</h3>
+  <h1 style="font-size:44px;margin-bottom:10px">Otsikko H1</h1><h2 style="font-size:28px;margin-bottom:10px">Väliotsikko H2</h2>
+  <p>Leipäteksti. Kunto, painovuosi ja hinta näkyvät heti ilman vierittämistä, koska antikvariaatin asiakas ostaa yksittäistä kappaletta.</p>
+  <p style="color:var(--muted);font-size:14px">Toissijainen teksti, 14 px</p></div>
+ <div class="panel"><h3>Painikkeet ja merkit</h3>
+  <div class="row-btns"><button class="btn primary">Lisää ostoskoriin</button><button class="btn ghost">Myy meille</button><button class="btn accent sm">Korostus</button></div>
+  <div class="row-btns"><span class="cond">K3</span><span class="cond">K4</span><span class="cond">K5-</span><span class="price"><span class="price-tag">15,00 €</span></span></div></div>
+ <div class="panel"><h3>Logo-luonnos (ei lopullinen)</h3><a href="#" class="logo"><svg class="hat" viewBox="0 0 64 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 29C11 35.5 52 35.5 61 26.5"/><path d="M15 28.5C13.5 17 16.5 6.5 25 5.5c4-.4 5.5 3.3 7 3.3s3-3.7 7-3.3c8.5 1 11.5 11.5 10 23"/><path d="M14.3 23.2c11 3.4 24.4 3.4 35.4 0"/><path d="M32 9v6"/></g></svg><span><span class="word">Kummisetä</span><span class="word-sub">Divari &amp; Antikvariaatti</span></span></a><p style="font-size:14px;color:var(--muted);margin:14px 0 0">Mukailee liikkeen ikkunan logoa: hattu ja kirjainnimi. Kaksi varsinaista logokonseptia esitetään erikseen.</p></div>
+</div></section>
+</main>
+
+<footer class="site"><div class="wrap">
+ <div class="cols">
+  <div><a href="#" class="logo"><svg class="hat" viewBox="0 0 64 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 29C11 35.5 52 35.5 61 26.5"/><path d="M15 28.5C13.5 17 16.5 6.5 25 5.5c4-.4 5.5 3.3 7 3.3s3-3.7 7-3.3c8.5 1 11.5 11.5 10 23"/><path d="M14.3 23.2c11 3.4 24.4 3.4 35.4 0"/><path d="M32 9v6"/></g></svg><span><span class="word">Kummisetä</span><span class="word-sub">Divari &amp; Antikvariaatti</span></span></a><p style="margin:16px 0 0;opacity:.85">Uudenmaankatu 26, 00120 Helsinki<br>Puh. 09 3540 1722<br>kummiseta1@wmail.fi</p></div>
+  <div><h4>Kauppa</h4><ul><li><a href="#">Kaunokirjallisuus</a></li><li><a href="#">Scifi &amp; fantasia</a></li><li><a href="#">Historia</a></li><li><a href="#">Filosofia</a></li><li><a href="#">Psykologia</a></li></ul></div>
+  <div><h4>Asiakaspalvelu</h4><ul><li><a href="#">Toimitus ja maksu</a></li><li><a href="#">Kuntoluokitus</a></li><li><a href="#">Palautukset</a></li><li><a href="#">Yhteystiedot</a></li></ul></div>
+  <div><h4>Kummisetä</h4><ul><li><a href="#">Myy meille kirjasi</a></li><li><a href="#">Tietoa meistä</a></li><li><a href="#">Toimitusehdot</a></li><li><a href="#">Tietosuoja</a></li></ul></div>
+ </div>
+ <div class="legal"><span>© Divari &amp; Antikvariaatti Kummisetä Oy · Y-tunnus 2438479-0</span><span>Verkkomaksu · Visma Pay</span></div>
+</div></footer>
+</body></html>
