@@ -142,14 +142,13 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:36px;padding
  footer .cols{grid-template-columns:1fr 1fr}
 }
 
-:root{--paper:#fff;--surface:#fff;--ink:#151515;--muted:#5d5d5d;--brand:#151515;--brand-ink:#fff;--brand-dark:#000;
---accent:#f5d22e;--accent-ink:#151515;--line:#e4e2dc;--tint:#fbf5d6;--price:#151515;
+:root{--paper:#faf8f3;--surface:#fff;--ink:#151515;--muted:#5d5d5d;--brand:#151515;--brand-ink:#fff;--brand-dark:#000;
+--accent:#f5d22e;--accent-ink:#151515;--line:#e4e1d8;--tint:#f2eee5;--price:#151515;
 --f-head:'Archivo',system-ui,sans-serif;--f-body:'Archivo',system-ui,sans-serif;--f-word:'Libre Caslon Text',Georgia,serif;
 --radius:3px;--radius-btn:3px;--head-weight:800;--head-case:uppercase;--head-track:.005em;--head-stretch:72%}
-.hero{background:var(--accent)}
-.hero h1 em{font-style:normal;background:var(--ink);color:var(--accent);padding:0 .15em}
-.hero .lead{color:#2b2b2b}
-.hero .btn.ghost{border-color:var(--ink)}
+.hero{background:var(--paper);border-bottom:1px solid var(--line)}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 58%,var(--accent) 58%,var(--accent) 92%,transparent 92%);padding:0 .06em}
+.hero .lead{color:var(--muted)}
 .cond{background:var(--ink);color:var(--accent);border:1px solid var(--ink)}
 .card .title{font-family:var(--f-word);font-weight:400}
 .pp-title{font-family:var(--f-word)!important;text-transform:none!important;font-weight:400!important;font-stretch:normal!important}
@@ -159,12 +158,12 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:36px;padding
 .utility b{color:var(--accent)}
 .nav{border-top:3px solid var(--ink)}
 .nav a{font-family:var(--f-head);text-transform:uppercase;font-stretch:80%;font-weight:700;letter-spacing:.02em}
-.nav a:hover,.nav a.on{background:var(--accent);color:var(--ink)}
+.nav a:hover,.nav a.on{box-shadow:inset 0 -4px 0 var(--accent)}
 .btn.primary:hover{background:var(--accent);color:var(--ink)}
-.sell{background:var(--accent);color:var(--ink)}
-.sell .btn{background:var(--ink);color:#fff}
-.ticket{background:var(--tint);border:2px solid var(--ink)}
-.cat h3{font-size:19px}
+.sell{background:var(--ink);color:#fff}
+.sell .btn{background:var(--accent);color:var(--ink)}
+.ticket{background:var(--surface);border:2px solid var(--ink)}
+.cat h3{font-size:17px}
 .logo .word-sub{font-family:var(--f-head);font-stretch:75%;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
 </style></head><body>
 <div class="demo-bar"><div class="wrap"><span><b>Luonnos</b> · Tyylisuunta B · Kyltti · JH Analytics</span><span><a href="index.html">Kaikki suunnat</a> · <a href="suunta-a.html">Vertaa: A · Kirjastokortti -&gt;</a></span></div></div>
