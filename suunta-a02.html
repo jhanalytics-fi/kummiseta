@@ -60,7 +60,7 @@ header.site{background:var(--surface);border-bottom:1px solid var(--line)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px/1 var(--f-body);padding:14px 24px;border-radius:var(--radius-btn);border:1.5px solid transparent;cursor:pointer;transition:.15s}
 .btn.primary{background:var(--brand);color:var(--brand-ink)}
 .btn.primary:hover{background:var(--brand-dark)}
-.btn.ghost{border-color:currentColor;background:transparent}
+.btn.ghost{border-color:currentColor;background:transparent}.btn.secondary{background:#fff;color:var(--brand);border-color:#fff;box-shadow:inset 0 -3px 0 rgba(0,0,0,.12)}
 .btn.accent{background:var(--accent);color:var(--accent-ink)}
 .btn.sm{padding:10px 14px;font-size:14px}
 section.block{padding:56px 0}
@@ -299,13 +299,13 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:36px;padding
  <form class="search" role="search" onsubmit="return false"><input placeholder="Hae kirjailijaa, teosta tai ISBN:ää" aria-label="Haku"><button aria-label="Hae"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></form>
  <div class="hicons"><a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-8.6-9C2.3 7.6 4.6 5 7.5 5c1.9 0 3.4 1 4.5 2.6C13.1 6 14.6 5 16.5 5c2.9 0 5.2 2.6 4.1 6-1.6 4.6-8.6 9-8.6 9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><small>Suosikit</small></a><a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><small>Tili</small></a><a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11h11l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg><small>Kori</small><span class="badge-n">2</span></a><a href="#" class="menu-btn" aria-label="Valikko"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a></div>
 </div></header>
-<nav class="nav"><div class="wrap"><a href="listaus.html" class=on>Kaunokirjallisuus</a><a href="listaus.html">Scifi &amp; fantasia</a><a href="listaus.html">Historia</a><a href="listaus.html">Filosofia</a><a href="listaus.html">Psykologia</a><a href="listaus.html" class="all">Kaikki kategoriat</a><a href="#" class="news">✉ Tilaa uutiskirje</a></div></nav>
+<nav class="nav"><div class="wrap"><a href="listaus.html" class=on>Kaunokirjallisuus</a><a href="listaus.html">Scifi &amp; fantasia</a><a href="listaus.html">Historia</a><a href="listaus.html">Filosofia</a><a href="listaus.html">Psykologia</a><a href="listaus.html" class="all">Kaikki kategoriat</a><a href="#" class="news"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:22px;height:22px"><path d="M3 6h18v12H3z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Tilaa uutiskirje</a></div></nav>
 <main>
 <section class="hero campaign"><div class="wrap">
  <div class="hero-text"><p class="overline">Syysale 20.–26.10.</p>
  <h1>Satu Rämön Islanti-dekkarit nyt -25 %.</h1>
  <p class="lead">Hildur, Rósa &amp; Björk ja Jakob hyvässä tai erinomaisessa kunnossa. Alennus näkyy suoraan hinnoissa, ei koodeja.</p>
- <div class="ctas"><a href="listaus.html" class="btn primary">Katso tarjoukset</a><a href="#uusimmat" class="textlink">Uusimmat hyllyssä -&gt;</a></div></div>
+ <div class="ctas"><a href="listaus.html" class="btn primary">Katso tarjoukset</a><a href="#uusimmat" class="btn secondary">Uusimmat hyllyssä -&gt;</a></div></div>
  <div class="stack"><img src="img/69f99f39474974b13826f877_hildur.jpg" alt=""><img src="img/6abe27dc9da0c38a96ad75d0_rosa-ja-bjork.jpg" alt=""><img src="img/6a5b403c0d8cd86636a6e44d_jakob.jpg" alt=""></div>
 </div></section>
 <div class="hero-note">Kampanjabanneri · ilman kampanjaa heron paikalla on liikekuva ja esittely (ks. A-versio)</div>
