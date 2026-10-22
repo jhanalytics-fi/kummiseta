@@ -15,6 +15,7 @@ h1,h2,h3{font-family:var(--f-head);font-weight:var(--head-weight);text-transform
 .utility{font-size:14px;padding:7px 0}
 .utility .wrap{display:flex;gap:28px;justify-content:center;flex-wrap:wrap}
 .utility span{display:flex;gap:6px;align-items:center}
+.utility .wrap{justify-content:space-between;flex-wrap:nowrap}.utility .usp{flex:1;min-width:0;display:flex;gap:28px;flex-wrap:nowrap;white-space:nowrap;overflow:hidden}.utility .links{display:flex;gap:20px;align-items:center;margin-left:auto}.utility .links a{display:flex;gap:6px;align-items:center;font-weight:600;border-bottom:1px solid transparent}.utility .links a:hover{border-bottom-color:currentColor}.utility .links a.sell-link{background:rgba(255,255,255,.14);padding:3px 10px;border-radius:var(--radius-btn);border:1px solid rgba(255,255,255,.35)}@media (max-width:1320px){.utility .usp span:nth-child(3){display:none}}
 header.site{background:var(--surface);border-bottom:1px solid var(--line)}
 .hbar{display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center;padding-top:16px;padding-bottom:16px}
 .logo{display:flex;align-items:center;color:var(--ink)}.logo svg{width:230px;height:auto}.on-dark .logo{color:#fff}
@@ -132,6 +133,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:36px;padding
  body{font-size:16px}
  .utility .wrap{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto}
  .utility span:nth-child(n+2){display:none}
+ .utility .wrap{justify-content:space-between}.utility .usp span:nth-child(n+2){display:none}.utility .links a:not(.sell-link){display:none}.utility .links a.sell-link{padding:2px 8px;font-size:13px}
  .hbar{grid-template-columns:auto 1fr auto;gap:12px;padding-top:10px;padding-bottom:12px}
  .hicons .menu-btn{display:flex}
  .logo svg{width:150px}
@@ -245,7 +247,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:36px;padding
  .filter-btn{display:inline-flex}
  .listing .grid{grid-template-columns:repeat(2,1fr)}
 }
-</style></head><body><div class="utility"><div class="wrap"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h11v10H2zM13 10h4l3 3v3h-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="6" cy="17.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="17.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> <b>Ilmainen toimitus</b>&nbsp;yli 75 € tilauksiin</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v10h16V10M3 5h18l-1 5H4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 20v-5h4v5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Nouto liikkeestä, Uudenmaankatu 26</span><span>★ 4,8/5 · 293 asiakaspalautetta</span></div></div>
+</style></head><body><div class="utility"><div class="wrap"><div class="usp"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h11v10H2zM13 10h4l3 3v3h-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="6" cy="17.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="17.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> <b>Ilmainen toimitus</b>&nbsp;yli 75 € tilauksiin</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v10h16V10M3 5h18l-1 5H4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 20v-5h4v5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Nouto liikkeestä, Uudenmaankatu 26</span><span>★ 4,8/5 · 293 asiakaspalautetta</span></div><div class="links"><a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Yhteystiedot</a><a href="#">Ota yhteyttä</a><a href="#" class="sell-link">Tarjoa kirjoja myytäväksi</a></div></div></div>
 <header class="site"><div class="wrap hbar">
  <a href="suunta-a02.html" class="logo" aria-label="Kummisetä etusivu"><svg role="img" aria-label="Kummisetä – Divari &amp; Antikvariaatti" fill="currentColor" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1385 387">
   
