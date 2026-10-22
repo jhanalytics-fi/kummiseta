@@ -136,6 +136,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:36px;padding
  .utility .wrap{justify-content:space-between}.utility .usp span:nth-child(n+2){display:none}.utility .links a:not(.sell-link){display:none}.utility .links a.sell-link{padding:2px 8px;font-size:13px}
  .hbar{grid-template-columns:auto 1fr auto;gap:12px;padding-top:10px;padding-bottom:12px}
  .hicons .menu-btn{display:flex}
+ .hicons .menu-btn svg{width:30px;height:30px}
  .logo svg{width:150px}
  .search{grid-column:1/-1;grid-row:2}
  .hicons{gap:14px;justify-self:end}.hicons small{display:none}
@@ -175,7 +176,8 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:36px;padding
 .search{border-width:2px}
 .nav .wrap{align-items:center}
 .nav .news{margin-left:auto;display:flex;align-items:center;gap:8px;color:var(--brand);font-weight:600}
-.nav .all{color:var(--muted);font-weight:500}
+.nav .all{color:var(--muted);font-weight:500}.nav .news{padding-right:0}.hicons a:last-of-type{margin-right:0}.hicons .badge-n{right:-6px}
+
 /* kunto-pisteet */
 .pips{display:inline-flex;gap:3px;align-items:center;padding:4px 7px;border-radius:3px;background:#fff;border:1px solid var(--line);font-size:12px;font-weight:700;color:var(--ink);line-height:1}
 .pips i{width:8px;height:8px;border-radius:50%;background:var(--line);display:block}
@@ -222,7 +224,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:36px;padding
 .filters .active span{background:var(--tint);border:1px solid var(--line);border-radius:3px;padding:3px 8px;font-size:13px}
 .filters .active a{color:var(--brand);text-decoration:underline;font-size:13px;align-self:center}
 .toolbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:18px;font-size:14px;color:var(--muted)}
-.toolbar select{font:inherit;font-size:14px;padding:7px 10px;border:1.5px solid var(--line);border-radius:3px;background:#fff;color:var(--ink)}
+.toolbar select{font:inherit;font-size:14px;padding:7px 36px 7px 12px;border:1.5px solid var(--line);border-radius:3px;color:var(--ink);-webkit-appearance:none;appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%236b2318' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 12px center/16px 16px;cursor:pointer}.toolbar select:focus{outline:none;border-color:var(--brand)}
 .filter-btn{display:none}
 .listing .grid{grid-template-columns:repeat(4,1fr)}
 .pager{display:flex;gap:6px;justify-content:center;margin-top:34px}
