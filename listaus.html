@@ -133,7 +133,9 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:36px;padding
  body{font-size:16px}
  .utility .wrap{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto}
  .utility span:nth-child(n+2){display:none}
- .utility .wrap{justify-content:space-between}.utility .usp span:nth-child(n+2){display:none}.utility .links a:not(.sell-link){display:none}.utility .links a.sell-link{padding:2px 8px;font-size:13px}
+ .utility .wrap{justify-content:space-between}.utility .usp span:nth-child(n+2){display:none}
+ .applied{font-size:14px;padding:10px 12px}.applied .clear{margin-left:0}
+.utility .links a:not(.sell-link){display:none}.utility .links a.sell-link{padding:2px 8px;font-size:13px}
  .hbar{grid-template-columns:auto 1fr auto;gap:12px;padding-top:10px;padding-bottom:12px}
  .hicons .menu-btn{display:flex}
  .hicons .menu-btn svg{width:30px;height:30px}
@@ -224,6 +226,22 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:36px;padding
 .filters .active{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
 .filters .active span{background:var(--tint);border:1px solid var(--line);border-radius:3px;padding:3px 8px;font-size:13px}
 .filters .active a{color:var(--brand);text-decoration:underline;font-size:13px;align-self:center}
+.filters label small{margin-left:auto;color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+.filters .active{display:none}
+.applied{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;background:var(--tint);border-left:4px solid var(--brand);border-radius:0 var(--radius) var(--radius) 0;padding:12px 16px;margin:0 0 18px;font-size:15px}
+.applied .lbl{font-weight:700}
+.applied .chip{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--line);border-radius:3px;padding:5px 10px}
+.applied .chip b{font-weight:600}
+.applied .chip .x{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--brand);color:#fff;font-size:13px;line-height:1;font-weight:700}
+.applied .clear{margin-left:auto;color:var(--brand);font-weight:600;text-decoration:underline}
+.filters .slider{position:relative;height:26px;margin:6px 6px 8px}
+.filters .slider .track{position:absolute;left:0;right:0;top:11px;height:4px;background:var(--line);border-radius:2px}
+.filters .slider .fill{position:absolute;top:11px;height:4px;background:var(--brand);border-radius:2px}
+.filters .slider .knob{position:absolute;top:2px;width:22px;height:22px;margin-left:-11px;border-radius:50%;background:#fff;border:2px solid var(--brand);box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.filters .range input{width:84px}
+.filters .range .unit{color:var(--muted)}
+.filters .hint{font-size:13px;color:var(--muted);margin:6px 0 0}
+
 .toolbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:18px;font-size:14px;color:var(--muted)}
 .toolbar select{font:inherit;font-size:14px;padding:7px 36px 7px 12px;border:1.5px solid var(--line);border-radius:3px;color:var(--ink);-webkit-appearance:none;appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%236b2318' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 12px center/16px 16px;cursor:pointer}.toolbar select:focus{outline:none;border-color:var(--brand)}
 .filter-btn{display:none}
@@ -314,10 +332,12 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:36px;padding
    <fieldset><legend>Alakategoria</legend><label><input type="checkbox"> Kotimainen<small>520</small></label><label><input type="checkbox"> Käännöskirjallisuus<small>410</small></label><label><input type="checkbox"> Dekkarit<small>160</small></label><label><input type="checkbox"> Novellit<small>70</small></label><label><input type="checkbox"> Runot<small>50</small></label><label><input type="checkbox"> Draama<small>30</small></label></fieldset>
    <fieldset><legend>Kunto</legend><label><input type="checkbox" checked> <span class="pips" title="Uudenveroinen (K5-)"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span> Uudenveroinen<small>120</small></label><label><input type="checkbox" checked> <span class="pips" title="Erinomainen (K4)"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span> Erinomainen<small>680</small></label><label><input type="checkbox"> <span class="pips" title="Hyvä (K3)"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span> Hyvä<small>400</small></label></fieldset>
    <fieldset><legend>Sidosasu</legend><label><input type="checkbox"> Sidottu<small>590</small></label><label><input type="checkbox"> Nidottu<small>310</small></label><label><input type="checkbox" checked> Pokkari<small>340</small></label></fieldset>
-   <fieldset><legend>Hinta</legend><div class="range"><input placeholder="0" aria-label="Alin hinta"> – <input placeholder="50" aria-label="Ylin hinta"> €</div></fieldset>
+   <fieldset><legend>Hinta</legend><div class="slider" aria-hidden="true"><div class="track"></div><div class="fill" style="left:0;right:50%"></div><div class="knob" style="left:0"></div><div class="knob" style="left:50%"></div></div><div class="range"><input value="0" aria-label="Alin hinta"> – <input value="50" aria-label="Ylin hinta"> <span class="unit">€</span></div></fieldset>
+   <fieldset><legend>Painovuosi</legend><div class="slider" aria-hidden="true"><div class="track"></div><div class="fill" style="left:28%;right:12%"></div><div class="knob" style="left:28%"></div><div class="knob" style="left:88%"></div></div><div class="range"><input value="1950" aria-label="Painovuosi alkaen"> – <input value="2015" aria-label="Painovuosi asti"></div></fieldset>
    <fieldset><legend>Kieli</legend><label><input type="checkbox"> suomi<small>1100</small></label><label><input type="checkbox"> ruotsi<small>60</small></label><label><input type="checkbox"> englanti<small>80</small></label></fieldset>
   </aside>
   <div>
+   <div class="applied"><span class="lbl">Suodattimet käytössä (2):</span><a href="#" class="chip"><b>Sidosasu:</b> Pokkari <span class="x" aria-label="Poista">×</span></a><a href="#" class="chip"><b>Kunto:</b> Erinomainen tai parempi <span class="x" aria-label="Poista">×</span></a><a href="#" class="clear">Poista kaikki suodattimet</a></div>
    <div class="toolbar"><span>Näytetään 1–12 / 1 240</span><label>Järjestä <select><option>Uusimmat ensin</option><option>Hinta: halvin ensin</option><option>Hinta: kallein ensin</option><option>Tekijän mukaan</option><option>Painovuosi</option></select></label></div>
    <div class="grid"><article class="card"><a href="suunta-a02.html#tuotesivu" class="cover"><img src="img/md_00188ab9df7e793858d2de89.jpg" alt="Mrs. Dalloway" loading="lazy"><span class="pips" title="Erinomainen (K4)"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><b>K4</b></span></a>
 <span class="author">Woolf, Virginia</span><a href="suunta-a02.html#tuotesivu" class="title">Mrs. Dalloway</a>
